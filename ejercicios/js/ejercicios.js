@@ -85,8 +85,31 @@ if (n <= usuarios.length ){
 }else{
     console.log("Usuario no registrado")
 
-
 }
+//Parte II Ejercicio 1
+//1. Dado un número b realizar la siguiente operación
+b=10
+if (b<10 ) {
+    console.log(2)
+}else{
+    console.log(4)
+}
+//2. Dado dos variables numéricas a y b, determinar cuál de los dos es mayor
+a=1
+b=2
+
+if (a-b>0) {
+    console.log("a es mayor que b")
+} if (a-b<0) {
+    console.log("b es mayor que a")
+}else {
+    console.log("a es igual que b")
+}
+//3. Dado un número n, determinar si es un número par
+n=3
+n=4
+
+if (2n-1)
 
 
 
