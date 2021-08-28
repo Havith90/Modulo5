@@ -98,18 +98,57 @@ if (b<10 ) {
 a=1
 b=2
 
-if (a-b>0) {
+if (a>b) {
     console.log("a es mayor que b")
-} if (a-b<0) {
+} else {
     console.log("b es mayor que a")
+}
+//3.Dados dos variables numéricas a y b, determinar cuál es mayor, cuál es menor o si son iguales
+a=2
+b=1
+if (a>b) {
+    console.log("a es mayor que b")
+} if (a<b) {
+    console.log("a es menor que b")
 }else {
     console.log("a es igual que b")
 }
-//3. Dado un número n, determinar si es un número par
+
+//4. Dado un número n, determinar si es un número par. División modular %     !=0 es diferente a cero
 n=3
 n=4
+if (n % 2 == 0) {
+    console.log("Número par")
+} else {
+    console.log("Número impar")
+}
+//5. Realizar un software para el control del ingreso de pesonas al cine, donde las películas se dividen en las siguientes categorías:
 
-if (2n-1)
+// A => Todo público
+// B => Desde 9 años
+// C => Desde 18 años
+// D => Desde 25 años
+// El usuario debe ingresar su edad y la categoría de la película que desea ver y el software deberá imprimir en consola si puede no ver la película según la clasificación.
 
 
+let edad = prompt("Ingrese su edad")
+let categoria = prompt("Ingrese la categoria A, B, C o D").toUpperCase()
 
+if (edad >= 0 && categoria == "A" || categoria == "B" || 
+    categoria == "C" || categoria == "D") {
+
+    if (categoria == "A") {
+        alert("Si puede ver la película cat A 👪")
+    }else if (categoria == "B" && edad >= 9){
+        alert("Si puede ver la película cat B 🧨")
+    }else if (categoria == "C" && edad >= 18){
+        alert("Si puede ver la película cat C 🔪")
+    }else if (categoria == "D" && edad >= 25){
+        alert("Si puede ver la película cat D 🐹")
+    }else{
+        alert("PARA LA CASA 🏠👈")
+    }
+
+}else{
+    alert("Edad o categorias invalidas 😣")
+}
