@@ -6,13 +6,16 @@ let n = 90
 let m = 50
 let r = n + m
 
+console.log( n + m ) // esto imprime en cosola
+
 // Ejercicio 2
-let a = 10
-let b = 20
-let c = 25
-let d = 30
-let e = 35
-let Z = a*b*c*d*e
+let a = 1
+let b = 5
+let c = 90
+let d = 10
+let e = 8
+
+let Z = a * b * c * d * e
 
 console.log(Z)
 
@@ -28,7 +31,7 @@ console.log(q)
 let texto1 = "hola"      
 let texto2 = " mundo"
 
-console.log( texto1 + texto2 )
+console.log(texto1 + texto2)
 
 //Ejercicio 5
 a = 5
@@ -43,7 +46,7 @@ b = "3"
 c = "7"
 d = a + b + c 
 
-console.log(a + " + " + b + " + " + c + " = " + d )
+console.log(a + " + " + b + " + " + c + " = " + d)
 
 //Ejercicio 6
 
@@ -122,6 +125,29 @@ if (n % 2 == 0) {
 } else {
     console.log("Número impar")
 }
+
+//
+
+// División modular % 
+
+n = 8
+let residuo = n % 2 // división modular
+
+if (residuo == 0) {
+    console.log(n + " es PAR")
+}
+
+
+if (residuo != 0){
+    console.log(n + " es IMPAR")
+}
+if (residuo > 0) {
+    console.log(n + " es IMPAR")
+}
+if (residuo == 1) {
+    console.log(n + " es IMPAR")
+}
+
 //5. Realizar un software para el control del ingreso de pesonas al cine, donde las películas se dividen en las siguientes categorías:
 
 // A => Todo público

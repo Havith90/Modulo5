@@ -5,15 +5,15 @@
 
 let n = 10
 let salida = ""
-
-for (let index = 0; index <= n; index++) {
-    
+// ejercicio 1
+for (let index = 0; index <= n; index++) { 
     if (index == n) {
         salida = salida + index
     }else{
         salida = salida + index + "-"
     }
 }
+
 console.log(salida)
 
 // Ejercicio 2
@@ -31,6 +31,33 @@ for (let index = 0; index >= -n; index--) {
     }
 }
 console.log(salida)
+
+//
+
+Ejercicio 2
+n = 10
+salida = ""
+for (let index = 0; index <= n; index++){
+    if (index == n) {
+        // salida = salida + (index * -1)
+        salida += (index * -1) // acumulativo
+    }else{
+        salida += (index * -1) + ";"
+    }
+}
+console.log(salida)
+salida = ""
+//                  -11     >= -10  
+for (let index = 0; index >= -n; index--){
+    if (index == n) {
+        // salida = salida + (index * -1)
+        salida -= index // acumulativo
+    }else{
+        salida -= index + ";"
+    }
+}
+console.log(salida)
+
 
 //Ejercicio 3
 
